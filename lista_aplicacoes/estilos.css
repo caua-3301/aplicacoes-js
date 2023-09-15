@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(20, 12, 34);
+    width: 99%;
+    height: 99%;
+}
+
+*{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h1{
+    font: normal bold 1.7em sans-serif;
+    text-align: center;
+}
+
+ul{
+    background-color: rgb(246, 241, 255);
+    border-radius: 10px;
+    overflow-y: scroll;
+    list-style: none;
+    height: 200px;
+}
+
+.saida{
+    background-color: rgb(238, 227, 255);
+    display: inline-block;
+    border-radius: 50px;
+    font-weight: normal;
+    padding: 0 15px;
+    height: 22px;
+    width: auto;
+}
+
+#gerar_numero, #calcular{
+    background-color: rgb(81, 52, 131);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    width: 100px;
+    margin: auto;
+    height: 30px;
+    border: none;
+}
+
+.botao:hover{
+    background-color: rgb(62, 37, 107);
+    border: 2px solid black;
+    transition: .5s;
+}
+
+.itemlista{
+    font: normal bold 1em sans-serif;
+    padding: 5px;
+    
+}
+     
+#container{
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 15vh auto;
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: auto;
+}
+
+#base{
+    margin-left: 35px;
+    margin-bottom: 5px;
+}

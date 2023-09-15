@@ -11,9 +11,6 @@ let valor = (base, expoente) => Math.pow(base, expoente)
 let divPrintar = document.createElement("div")
 divPrintar.classList.add("saida")
 
-//Chamando a função atrves de um evento click no botao
-ativarFuncao.addEventListener("click", ()=> calcularPotencia())
-
 function calcularPotencia() {
     let base = document.querySelector("#base")
     let expoente = document.querySelector("#expoente")
@@ -28,3 +25,6 @@ function calcularPotencia() {
 
     resultado.appendChild(divPrintar)
 }
+
+//Chamando a função atrves de um evento click no botao
+ativarFuncao.addEventListener("click", ()=> calcularPotencia())

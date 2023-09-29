@@ -21,7 +21,7 @@ function converterKelvin(temperaturaEmCelcius) {
 
 function converterFahrenheit(temperaturaEmCelcius) {
     let tempEmFah = (Number(temperaturaEmCelcius.value)*1.8) + 32
-    exibirFahn.innerHTML = `Em Fahrenheit = ${tempEmFah} ºF`
+    exibirFahn.innerHTML = `Em Fahrenheit = ${tempEmFah.toFixed(2)} ºF`
 }
 
 temperaturaEmCelcius.addEventListener("keyup", function(event) {

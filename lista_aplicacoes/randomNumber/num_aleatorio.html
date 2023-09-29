@@ -1,20 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos.css">
+    <style>
+        body {
+            background-color: rgb(20, 12, 34);
+            width: 99%;
+            height: 99%;
+        }
+
+        * {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        h1 {
+            font: normal bold 1.7em sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            background-color: rgb(246, 241, 255);
+            border-radius: 10px;
+            overflow-y: scroll;
+            list-style: none;
+            height: 200px;
+        }
+
+        .saida {
+            background-color: rgb(238, 227, 255);
+            display: inline-block;
+            border-radius: 50px;
+            font-weight: normal;
+            padding: 0 15px;
+            height: 22px;
+            width: auto;
+        }
+
+        button.botao {
+            background-color: rgb(81, 52, 131);
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: .5s;
+            width: 100px;
+            margin: auto;
+            height: 30px;
+            border: none;
+        }
+
+        /*Botão que ativa as funções*/
+        .botao:hover {
+            background-color: rgb(62, 37, 107);
+            border: 2px solid black;
+            transition: .5s;
+        }
+
+        /*Itens da lsita numeros aleatorios*/
+        .itemlista {
+            font: normal bold 1em sans-serif;
+            padding: 5px;
+
+        }
+
+        /*Container principal*/
+        #container {
+            background-color: rgb(255, 255, 255);
+            flex-direction: column;
+            border-radius: 15px;
+            margin: 15vh auto;
+            padding: 10px;
+            display: flex;
+            width: 300px;
+            height: auto;
+        }
+
+        /*Base da exponenciação*/
+        #base {
+            margin-left: 35px;
+            margin-bottom: 5px;
+        }
+
+        #temp-fahrenheit {
+            margin-bottom: 20px;
+        }
+
+        /*Detalhe do conversor de temperatura*/
+
+        .quente {
+            background-color: rgb(58, 14, 14);
+            transition: 2s;
+        }
+
+        .frio {
+            background-color: rgb(12, 24, 34);
+            transition: 2s;
+        }
+    </style>
     <title>Numero Aleatorio</title>
 </head>
+
 <body>
     <section id="container">
         <h1>Random Here</h1>
         <ul id="exibir">
 
         </ul>
-        <button id="gerar_numero">Gerar</button>
+        <button id="gerar_numero" class="botao">Gerar</button>
     </section>
 
     <script src="./questao_01.js"></script>
 </body>
+
 </html>

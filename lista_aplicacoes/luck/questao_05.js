@@ -11,9 +11,14 @@ let controle = 0
 let limite = 1000000
 
 //Lista com valores
-const valores = {1:2, 2:0, 3:0, 4:0, 5:0, 6:0}
+const valores = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0}
 
 simularDados.addEventListener("click", () => {
+
+    for(let valor in valores) {
+        valores[valor] = 0;
+    }
+
     while (controle < limite){
         let valorRadom = parseInt(Math.random() * (7))
 
